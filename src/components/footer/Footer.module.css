@@ -1,0 +1,25 @@
+.footer {
+    background-color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+.footer a:hover {
+    color: #cc6f29;
+}
+
+.footer span a {
+    color: black;
+}
+
+.footer span i {
+    color: black;
+    margin: auto 3px;
+}

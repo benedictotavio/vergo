@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-inline: 20%;
+}
+
+.form button, .form select, .form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form button[type="submit"] {
+  background-color: var(--bg-color-primary);
+  color: #fff;
+}
+
+.form button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form button[type="submit"]:hover {
+  background-color: var(--bg-color-primary-hover);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  animation: fadeIn 0.5s ease-in-out;
+  color: var(--bg-color-primary)
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-inline: 5%;
+  }
+}
